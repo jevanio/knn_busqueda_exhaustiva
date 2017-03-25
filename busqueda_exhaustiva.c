@@ -313,7 +313,7 @@ int main(int argc, char *argv[])
     recover = fill_matrix(recover,recover_file);
 
     knn_matrix* knn = malloc(sizeof(knn_matrix));
-    knn = init_knn_matrix(knn, recover->n_rows, k);
+    knn = init_knn_matrix(knn, querys->n_rows, k);
 
     printf("Realiza KNN\n");
     find_knn(querys, recover,knn);
